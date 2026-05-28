@@ -256,14 +256,45 @@ const SCENES = [
     id: 'modelled',
     label: 'Modelled Scene',
     cases: [
-      { id:1, name:'rigid_static_hat',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion1'} ] },
-      { id:2, name:'rigid_static_car',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion1'} ] },
+      { id:1, name:'rigid_static_hat',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion1'} ] },
+      { id:1, name:'rigid_static_hat',               subcases:[ {id:'b', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion2'} ] },
+      { id:1, name:'rigid_static_hat',               subcases:[ {id:'c', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion3'} ] },
+      { id:1, name:'rigid_static_hat',               subcases:[ {id:'d', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion4'} ] },
+
+      { id:2, name:'rigid_static_car',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion1'} ] },
+      { id:2, name:'rigid_static_car',               subcases:[ {id:'b', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion2'} ] },
+      { id:2, name:'rigid_static_car',               subcases:[ {id:'c', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion3'} ] },
+      { id:2, name:'rigid_static_car',               subcases:[ {id:'d', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion4'} ] },
+
       { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'a', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion1'} ] },
+      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'b', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion2'} ] },
+      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'c', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion3'} ] },
+      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'d', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion4'} ] },
+
       { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'a', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion1'} ] },
+      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'b', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion2'} ] },
+      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'c', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion3'} ] },
+      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'d', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion4'} ] },
+
       { id:5, name:'deformable_static_flag',         subcases:[ {id:'a', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion1'} ] },
-      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'a', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion4'} ] },
+      { id:5, name:'deformable_static_flag',         subcases:[ {id:'b', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion2'} ] },
+      { id:5, name:'deformable_static_flag',         subcases:[ {id:'c', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion3'} ] },
+      { id:5, name:'deformable_static_flag',         subcases:[ {id:'d', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion4'} ] },
+
+      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'a', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion1'} ] },
+      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'b', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion2'} ] },
+      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'c', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion3'} ] },
+      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'d', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion4'} ] },
+
       { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'a', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion1/disocclusion1'} ] },
+      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'b', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion1/disocclusion2'} ] },
+      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'c', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion2/disocclusion3'} ] },
+      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'d', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion2/disocclusion4'} ] },
+
       { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'a', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion1'} ] },
+      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'b', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion2'} ] },
+      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'c', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion3'} ] },
+      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'d', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion4'} ] },
     ]
   },
   {
@@ -272,6 +303,9 @@ const SCENES = [
     cases: [
       { id:1, name:'tissue_box', subcases:[ {id:'a', base:'./capture/tissue_box'} ] },
       { id:2, name:'troller',    subcases:[ {id:'a', base:'./capture/troller'} ] },
+      { id:2, name:'box',    subcases:[ {id:'a', base:'./capture/box'} ] },
+      { id:2, name:'medical_box',    subcases:[ {id:'a', base:'./capture/medical_box'} ] },
+      { id:2, name:'laptop',    subcases:[ {id:'a', base:'./capture/laptop'} ] },
     ]
   },
 ];
@@ -288,22 +322,22 @@ const ROWS = [
 
 // ── Metrics data (averaged across all 8 modelled scenes) ──
 const METRICS = [
-  { label:'CogX',        color:'#ff6b9d', flow:0.0620, l2d:57.1660, l2f:31.2621, dino:0.6902 },
-  { label:'CogX-interp', color:'#48dbfb', flow:0.2913, l2d:49.5743, l2f:20.5879, dino:0.8182 },
-  { label:'DAS',         color:'#ff6a6a', flow:0.6897, l2d:47.6690, l2f:19.3543, dino:0.8261 },
-  { label:'Ours',        color:'#7c6aff', flow:0.6875, l2d:28.7272, l2f:20.2423, dino:0.8257 },
-  { label:'Pixel CP',    color:'#1dd1a1', flow:0.6723, l2d:34.5757, l2f:18.4422, dino:0.8378 },
-  { label:'Pixel CP+',   color:'#feca57', flow:0.6719, l2d:32.0664, l2f:18.1955, dino:0.8391 },
+  { label:'CogX',        color:'#ff6b9d', flow:-0.00592, l2d:74.40934, l2f:34.07148, dino:0.733051, fvdStyle:1580.717,  fvdVideo:1584.651,  ssim:0.827712, psnr:17.71358, lpips:0.266803 },
+  { label:'CogX-interp', color:'#48dbfb', flow:0.208103, l2d:42.98574, l2f:20.81152, dino:0.841160, fvdStyle:960.5626,  fvdVideo:963.0164,  ssim:0.873282, psnr:20.45077, lpips:0.181654 },
+  { label:'DAS',         color:'#ff6a6a', flow:0.680903, l2d:45.21505, l2f:19.45885, dino:0.800529, fvdStyle:878.6503,  fvdVideo:881.0561,  ssim:0.881220, psnr:21.44891, lpips:0.146031 },
+  { label:'Ours',        color:'#7c6aff', flow:0.648778, l2d:30.12571, l2f:18.14328, dino:0.802380, fvdStyle:847.8314,  fvdVideo:850.0720,  ssim:0.889917, psnr:22.81021, lpips:0.144541 },
+  { label:'Pixel CP',    color:'#1dd1a1', flow:0.694125, l2d:35.56144, l2f:17.95622, dino:0.861953, fvdStyle:653.0456,  fvdVideo:654.7477,  ssim:0.888706, psnr:22.76110, lpips:0.131578 },
+  { label:'Pixel CP+',   color:'#feca57', flow:0.697419, l2d:35.61821, l2f:17.88319, dino:0.852062, fvdStyle:658.7755,  fvdVideo:660.5769,  ssim:0.889625, psnr:22.76024, lpips:0.132639 },
 ];
 
 // ── Metrics data (averaged across 2 captured scenes) ──
 const METRICS_CAPTURED = [
-  { label:'CogX',        color:'#ff6b9d', flow:0.0718, l2d:145.8584, l2f:62.3610, dino:0.6510 },
-  { label:'CogX-interp', color:'#48dbfb', flow:0.7833, l2d:31.6071,  l2f:17.7245, dino:0.9670 },
-  { label:'DAS',         color:'#ff6a6a', flow:0.9506, l2d:56.5635,  l2f:19.4983, dino:0.8754 },
-  { label:'Ours',        color:'#7c6aff', flow:0.8909, l2d:55.7164,  l2f:23.0976, dino:0.8686 },
-  { label:'Pixel CP',    color:'#1dd1a1', flow:0.9273, l2d:37.0202,  l2f:20.4437, dino:0.8949 },
-  { label:'Pixel CP+',   color:'#feca57', flow:0.9269, l2d:33.8657,  l2f:20.0496, dino:0.8935 },
+  { label:'CogX',        color:'#ff6b9d', flow:0.037309, l2d:144.1914, l2f:70.86257, dino:0.716079, fvdStyle:2358.113, fvdVideo:2364.23,  ssim:0.656784, psnr:13.13262, lpips:0.453222 },
+  { label:'CogX-interp', color:'#48dbfb', flow:0.700528, l2d:37.64949,  l2f:17.68682, dino:0.961489, fvdStyle:381.0251, fvdVideo:382.3632, ssim:0.844535, psnr:22.68337, lpips:0.123653 },
+  { label:'DAS',         color:'#ff6a6a', flow:0.741111, l2d:67.49215,  l2f:25.15201, dino:0.880488, fvdStyle:697.3906, fvdVideo:699.6658, ssim:0.796824, psnr:20.23448, lpips:0.186561 },
+  { label:'Ours',        color:'#7c6aff', flow:0.740392, l2d:53.00804,  l2f:24.11851, dino:0.866400, fvdStyle:803.4346, fvdVideo:805.7704, ssim:0.813401, psnr:20.92588, lpips:0.198132 },
+  { label:'Pixel CP',    color:'#1dd1a1', flow:0.788724, l2d:56.47895,  l2f:25.36223, dino:0.903616, fvdStyle:611.2971, fvdVideo:613.0444, ssim:0.794116, psnr:20.54419, lpips:0.172107 },
+  { label:'Pixel CP+',   color:'#feca57', flow:0.735640, l2d:55.63586,  l2f:24.75791, dino:0.905590, fvdStyle:710.9239, fvdVideo:712.5559, ssim:0.795419, psnr:20.64911, lpips:0.171621 },
 ];
 
 function bestVal(data, key, higher) {
@@ -317,10 +351,23 @@ function makeMetricsTable(data, noteText) {
   wrap.className = 'metrics-wrap';
   wrap.style.marginBottom = '32px';
 
-  const bestFlow = bestVal(data, 'flow', true);
-  const bestL2d  = bestVal(data, 'l2d',  false);
-  const bestL2f  = bestVal(data, 'l2f',  false);
-  const bestDino = bestVal(data, 'dino', true);
+  const columns = [
+    { key:'flow',     title:'Flow cos sim ↑',    higher:true,  digits:4 },
+    { key:'l2d',      title:'L2 disocclusion ↓', higher:false, digits:4 },
+    { key:'l2f',      title:'L2 full frame ↓',   higher:false, digits:4 },
+    { key:'dino',     title:'DINO cos sim ↑',    higher:true,  digits:4 },
+    { key:'fvdStyle', title:'FVD style ↓',       higher:false, digits:4, optional:true },
+    { key:'fvdVideo', title:'FVD video ↓',       higher:false, digits:4, optional:true },
+    { key:'ssim',     title:'SSIM ↑',            higher:true,  digits:4, optional:true },
+    { key:'psnr',     title:'PSNR ↑',            higher:true,  digits:4, optional:true },
+    { key:'lpips',    title:'LPIPS ↓',           higher:false, digits:4, optional:true },
+  ].filter(col => !col.optional || data.some(m => m[col.key] !== undefined));
+
+  const best = {};
+  columns.forEach(col => {
+    const vals = data.map(m => m[col.key]).filter(v => v !== undefined);
+    best[col.key] = col.higher ? Math.max(...vals) : Math.min(...vals);
+  });
 
   const tbodyId = 'metrics-tbody-' + (++_tbodyCounter);
   const table = document.createElement('table');
@@ -328,10 +375,7 @@ function makeMetricsTable(data, noteText) {
     <thead>
       <tr>
         <th>Method</th>
-        <th>Flow cos sim ↑</th>
-        <th>L2 disocclusion ↓</th>
-        <th>L2 full frame ↓</th>
-        <th>DINO cos sim ↑</th>
+        ${columns.map(col => `<th>${col.title}</th>`).join('')}
       </tr>
     </thead>
     <tbody id="${tbodyId}"></tbody>
@@ -349,10 +393,11 @@ function makeMetricsTable(data, noteText) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td><span class="method-cell"><span class="m-dot" style="background:${m.color}"></span>${m.label}</span></td>
-        <td class="${m.flow === bestFlow ? 'best' : ''}">${m.flow.toFixed(4)}</td>
-        <td class="${m.l2d  === bestL2d  ? 'best' : ''}">${m.l2d.toFixed(4)}</td>
-        <td class="${m.l2f  === bestL2f  ? 'best' : ''}">${m.l2f.toFixed(4)}</td>
-        <td class="${m.dino === bestDino ? 'best' : ''}">${m.dino.toFixed(4)}</td>
+        ${columns.map(col => {
+          const v = m[col.key];
+          const cls = v === best[col.key] ? 'best' : '';
+          return `<td class="${cls}">${v === undefined ? '—' : v.toFixed(col.digits)}</td>`;
+        }).join('')}
       `;
       tbody.appendChild(tr);
     });
