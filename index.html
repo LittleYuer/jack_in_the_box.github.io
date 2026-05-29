@@ -255,47 +255,88 @@ const SCENES = [
   {
     id: 'modelled',
     label: 'Modelled Scene',
-    cases: [
-      { id:1, name:'rigid_static_hat',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion1'} ] },
-      { id:1, name:'rigid_static_hat',               subcases:[ {id:'b', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion2'} ] },
-      { id:1, name:'rigid_static_hat',               subcases:[ {id:'c', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion3'} ] },
-      { id:1, name:'rigid_static_hat',               subcases:[ {id:'d', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion4'} ] },
-
-      { id:2, name:'rigid_static_car',               subcases:[ {id:'a', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion1'} ] },
-      { id:2, name:'rigid_static_car',               subcases:[ {id:'b', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion2'} ] },
-      { id:2, name:'rigid_static_car',               subcases:[ {id:'c', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion3'} ] },
-      { id:2, name:'rigid_static_car',               subcases:[ {id:'d', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion4'} ] },
-
-      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'a', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion1'} ] },
-      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'b', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion2'} ] },
-      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'c', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion3'} ] },
-      { id:3, name:'rigid_moving_jackinbox',         subcases:[ {id:'d', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion4'} ] },
-
-      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'a', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion1'} ] },
-      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'b', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion2'} ] },
-      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'c', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion3'} ] },
-      { id:4, name:'rigid_moving_Isabelle_pendulum', subcases:[ {id:'d', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion4'} ] },
-
-      { id:5, name:'deformable_static_flag',         subcases:[ {id:'a', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion1'} ] },
-      { id:5, name:'deformable_static_flag',         subcases:[ {id:'b', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion2'} ] },
-      { id:5, name:'deformable_static_flag',         subcases:[ {id:'c', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion3'} ] },
-      { id:5, name:'deformable_static_flag',         subcases:[ {id:'d', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion4'} ] },
-
-      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'a', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion1'} ] },
-      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'b', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion2'} ] },
-      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'c', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion3'} ] },
-      { id:6, name:'deformable_static_dinosaur',     subcases:[ {id:'d', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion4'} ] },
-
-      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'a', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion1/disocclusion1'} ] },
-      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'b', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion1/disocclusion2'} ] },
-      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'c', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion2/disocclusion3'} ] },
-      { id:7, name:'deformable_moving_cloth_pumpkin',subcases:[ {id:'d', base:'./modeled_scenes/deformable_moving_cloth_pumpkin/motion2/disocclusion4'} ] },
-
-      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'a', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion1'} ] },
-      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'b', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion2'} ] },
-      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'c', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion3'} ] },
-      { id:8, name:'deformable_moving_box_coin',     subcases:[ {id:'d', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion4'} ] },
+   cases: [
+  {
+    id:1,
+    name:'rigid_static_hat',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/rigid_static_hat/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/rigid_static_hat/motion2/disocclusion4'},
     ]
+  },
+  {
+    id:2,
+    name:'rigid_static_car',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/rigid_static_car/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/rigid_static_car/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:3,
+    name:'rigid_moving_jackinbox',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/rigid_moving_jackinbox/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/rigid_moving_jackinbox/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:4,
+    name:'rigid_moving_Isabelle_pendulum',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/rigid_moving_Isabelle_pendulum/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:5,
+    name:'deformable_static_flag',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/deformable_static_flag/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/deformable_static_flag/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:6,
+    name:'deformable_static_dinosaur',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/deformable_static_dinosaur/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/deformable_static_dinosaur/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:7,
+    name:'deformable_moving_cloth_pendulum',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/deformable_moving_cloth_pendulum/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/deformable_moving_cloth_pendulum/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/deformable_moving_cloth_pendulum/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/deformable_moving_cloth_pendulum/motion2/disocclusion4'},
+    ]
+  },
+  {
+    id:8,
+    name:'deformable_moving_box_coin',
+    subcases:[
+      {id:'a', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion1'},
+      {id:'b', base:'./modeled_scenes/deformable_moving_box_coin/motion1/disocclusion2'},
+      {id:'c', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion3'},
+      {id:'d', base:'./modeled_scenes/deformable_moving_box_coin/motion2/disocclusion4'},
+    ]
+  },
+]
   },
   {
     id: 'captured',
